@@ -1,0 +1,335 @@
+/* Theme: Squarespace-like, Image-Focused, Professional.
+Font: Inter (Modern and highly legible).
+Color Palette: Soft, nature-inspired accents on a slightly textured background. 
+*/
+
+:root {
+    --primary-color: #333333; /* Dark text */
+    --accent-color: #f7a8b8; /* Soft pink/coral, inspired by the flowers */
+    --light-bg: rgba(255, 255, 255, 0.95); /* Semi-transparent white content background */
+    --border-color: #e0e0e0;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    font-size: 16px;
+    /* --- SQUARESAPCE LOOK: FIXED IMAGE BACKGROUND --- */
+    background-image: url('images/concept_background.png');
+    background-attachment: fixed; /* Makes the content scroll over the background */
+    background-size: cover;
+    background-position: center top;
+    color: var(--primary-color);
+}
+
+.content-wrapper {
+    /* This wrapper ensures all content sits cleanly on a semi-transparent white box */
+    background-color: var(--light-bg);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px; /* Max width for readability */
+    margin: 0 auto;
+    padding: 0; /* Remove padding here, add it to sections */
+}
+
+/* --- HEADER STYLES --- */
+
+header {
+    text-align: center;
+    padding: 100px 20px; /* Generous padding for visual breathing room */
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly more opaque header */
+    border-bottom: 2px solid var(--border-color);
+}
+
+header h1 {
+    font-size: clamp(3rem, 8vw, 4.5rem); 
+    margin-bottom: 5px;
+    font-weight: 700;
+    color: #222;
+}
+
+header p.tagline {
+    font-size: clamp(1.2rem, 3vw, 1.8rem);
+    font-style: italic;
+    color: #555;
+    margin-top: 10px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.team-info {
+    margin-top: 30px;
+    font-size: 1rem;
+    color: #444;
+}
+
+.contributions {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    font-style: normal;
+    color: #777;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.4;
+}
+
+
+/* --- SECTION STYLES --- */
+
+section {
+    padding: 80px 40px; /* Large padding for spacious feel */
+    border-bottom: 1px solid var(--border-color);
+    text-align: center; /* Center content like in Squarespace templates */
+}
+
+.text-content {
+    max-width: 750px;
+    margin: 0 auto;
+    text-align: left; /* Text content aligns left within its centered box */
+}
+
+.section-title {
+    color: #111;
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    font-weight: 700;
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid var(--accent-color); /* Underline style */
+    display: inline-block;
+}
+
+.lead-paragraph {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #444;
+    margin-bottom: 30px;
+}
+
+/* --- GALLERY STYLES --- */
+
+.gallery-grid {
+    display: flex;
+    flex-direction: column; /* Stack vertically on mobile */
+    gap: 50px;
+    margin-top: 50px;
+}
+
+@media (min-width: 900px) {
+    /* Use a two-column layout on larger screens */
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+    }
+}
+
+.gallery-item {
+    text-align: center;
+}
+
+.gallery-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 15px;
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.shadow-lg {
+    box-shadow: 0 15px 30px var(--shadow-color);
+}
+
+.gallery-item img:hover {
+    transform: translateY(-8px);
+}
+
+.caption {
+    font-size: 0.95rem;
+    color: #666;
+    margin-top: 15px;
+    font-style: italic;
+}
+
+.implementation-details {
+    margin-top: 50px;
+    padding: 30px;
+    background-color: var(--light-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    text-align: left;
+}
+.implementation-details h3 {
+    text-align: center;
+}
+.component-list {
+    list-style: none;
+    padding-left: 0;
+    columns: 2; /* Two columns for the list on desktop */
+}
+
+@media (max-width: 600px) {
+    .component-list {
+        columns: 1;
+    }
+}
+
+.component-list li {
+    margin-bottom: 12px;
+    position: relative;
+    padding-left: 20px;
+}
+.component-list li::before {
+    content: "·";
+    color: var(--accent-color);
+    font-weight: bold;
+    font-size: 2em;
+    line-height: 0.5em;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+/* --- VIDEO STYLES --- */
+.video-embed {
+    position: relative;
+    width: 100%;
+    max-width: 850px;
+    margin: 40px auto 0;
+    padding-bottom: 56.25%; 
+    height: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.video-embed iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* --- PROCESS STYLES --- */
+
+.process-iteration {
+    margin-top: 40px;
+    padding: 40px;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.process-iteration h3 {
+    color: var(--accent-color);
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+.process-iteration p {
+    max-width: 700px;
+    margin: 15px auto;
+    text-align: center;
+}
+
+.process-image-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.process-image-row img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+    border-radius: 4px;
+    flex: 1 1 calc(33% - 15px); /* Three images per row */
+    min-width: 150px;
+}
+
+.reflection {
+    margin-top: 50px;
+    padding: 30px;
+    border-left: 5px solid var(--accent-color);
+    background-color: var(--light-bg);
+    border-radius: 8px;
+    text-align: left;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* --- FUTURE / LINKS STYLES --- */
+
+.future-list {
+    list-style: none;
+    padding-left: 0;
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+.future-list li {
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 30px;
+    text-align: left;
+}
+.future-list li::before {
+    content: "🚀"; /* Unicode rocket icon */
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.link-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 30px;
+}
+.link-list li {
+    margin-bottom: 10px;
+}
+.link-list a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 5px 10px;
+    border: 1px solid var(--accent-color);
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+.link-list a:hover {
+    background-color: var(--accent-color);
+    color: white;
+}
+
+/* --- FOOTER STYLES --- */
+
+footer {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #111;
+    color: #aaa;
+    font-size: 0.9rem;
+}
+.footer-text {
+    margin: 0;
+}

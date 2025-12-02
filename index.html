@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Vase | Project Portfolio</title>
+    <!-- Link to the external stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Import: Using Inter for a modern, professional look -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Wrapper for the Squarespace-like semi-transparent content area -->
+    <div class="content-wrapper">
+
+        <div class="container">
+
+            <!-- HEADER / TITLE / TAGLINE -->
+            <header>
+                <h1>Solar Vase</h1>
+                <p class="tagline">A sunlight-following vase designed to help indoor plants receive balanced sunlight throughout the day.</p>
+                <div class="team-info">
+                    <p><strong>Team:</strong> Mengting Li, Janice Zhou, Wei Chang</p>
+                    <p class="contributions"><em>Mengting focused on the industrial design and aesthetic language; Wei managed the intelligent rotating mechanism and electronics; Janice handled 3D modeling and prototyping.</em></p>
+                </div>
+            </header>
+
+            <!-- DESCRIPTION -->
+            <section id="description">
+                <h2 class="section-title">Project Overview & Problem</h2>
+                <div class="text-content">
+                    <p class="lead-paragraph">Seattle's cloudy, rainy climate leaves indoor plants with limited natural light. Plant owners must manually reposition plants throughout the day, which is inconvenient and inefficient for healthy long-term growth; insufficient light also increases the risk of diseases and pests.</p>
+                    <p>Our solution, the **Solar Vase**, successfully addresses this by integrating an intelligent rotating mechanism with the aesthetic language of traditional Eastern vases. The system automatically tracks the sun, ensuring the plant receives optimal, balanced light throughout the day.</p>
+                </div>
+            </section>
+
+            <!-- GALLERY / IMAGES -->
+            <section id="gallery">
+                <h2 class="section-title">Gallery & Implementation</h2>
+
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <!-- Image: Finished Solar Vase -->
+                        <img src="images/solar_vase_with_flowers.jpg" alt="Finished Solar Vase with flowers" class="shadow-lg">
+                        <p class="caption">The final design showcasing the traditional gourd aesthetic, seamlessly integrated with the functional base.</p>
+                    </div>
+
+                    <div class="gallery-item">
+                        <!-- Image: Exploded View -->
+                        <img src="images/exploded_view_of_the_gear_mechanism.png" alt="Exploded view of the gear mechanism" class="shadow-lg">
+                        <p class="caption">The internal components, including the Light Sensor, Motor (8), and the Four-Gear Drive System (1-4) housed within the base.</p>
+                    </div>
+                </div>
+
+                <div class="implementation-details">
+                    <h3>Key Components and Functionality</h3>
+                    <ul class="component-list">
+                        <li>**Light Sensor** at the Vase Opening: Detects light intensity and direction to guide rotation.</li>
+                        <li>**Four-Gear Drive System** (1-4) and **Motor** (8): Executes the precise, slow rotation to follow the sun.</li>
+                        <li>**Base Joint Connector** (6) & **Base Top Plate** (7): Ensures a stable and secure connection between the moving base and the vase body.</li>
+                        <li>**Aesthetic Design:** Combines the intelligent mechanism with the elegant lines of traditional Eastern vases.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- VIDEO -->
+            <section id="video">
+                <h2 class="section-title">Video Demonstration</h2>
+                <div class="text-content">
+                    <p>Watch our Solar Vase system in action, demonstrating its sunlight-following functionality. This visual proof highlights the system's smooth, autonomous operation.</p>
+                </div>
+                <div class="video-embed">
+                    <!-- IMPORTANT: Embed your video here. Replace the src URL. -->
+                    <iframe src="YOUR_VIDEO_EMBED_URL" 
+                        title="Solar Vase Demonstration Video" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+                </div>
+                <div class="text-content">
+                    <p class="caption mt-8">*(Please replace "YOUR_VIDEO_EMBED_URL" with the actual embed link to your demo video.)*</p>
+                </div>
+            </section>
+
+            <!-- PROCESS -->
+            <section id="process">
+                <h2 class="section-title">Design Process: Iterations & Learning</h2>
+                <div class="text-content">
+                    <p>Our iterative process allowed us to refine both the functional mechanics and the product's overall appearance, starting from simple aesthetic concepts to detailed 3D printed prototypes.</p>
+                </div>
+
+                <div class="process-iteration">
+                    <h3>Iteration 1: Conceptualization and Modeling</h3>
+                    <p>Initial focus was on identifying the ideal form, resulting in the exploration of different **bottom patterns** and **vase shapes**. We used digital modeling to simulate various aesthetic options. **Learned:** The double-gourd shape provided the best balance of traditional elegance and space required for internal components, leading us to refine the connection structure early on.</p>
+                    <!-- Image: Design Process -->
+                    <img src="images/design_process.png" alt="Conceptual sketches and 3D modeling stages" class="shadow-sm process-image-row">
+                </div>
+
+                <div class="process-iteration">
+                    <h3>Iteration 2: Prototyping and Mechanism Testing</h3>
+                    <p>We moved into **3D printing** to create functional prototypes of the base, gear covers, and the four-gear system. This phase was critical for testing tolerances and fit. **Learned:** The fine structural details (like the vase fluting) required extremely high-resolution printing, and we had to slightly increase the size of the base joints to account for printing shrinkage and ensure smooth, silent mechanical operation.</p>
+                    <div class="process-image-row">
+                        <!-- Image: 3D Printing Photos (Showing various stages) -->
+                        <img src="images/3d_printing.png" alt="Photos of various 3D printing stages, parts, and finished prototype vase">
+                    </div>
+                </div>
+
+                <div class="reflection">
+                    <p><strong>Reflections on the Process:</strong> The most delightful aspect was seeing the final prototype successfully track the light. The major challenge involved ensuring the robustness of the gear system at micro-scale while maintaining a discreet, aesthetic enclosure. We achieved this by simplifying the electronic requirements and focusing on high-precision printing.</p>
+                </div>
+            </section>
+
+            <!-- FUTURE IMPROVEMENTS / LINKS -->
+            <section id="future">
+                <h2 class="section-title">Future Development</h2>
+                <p>To further enhance the product for commercial use, we plan to focus on user experience and integration:</p>
+                <ul class="future-list">
+                    <li>Design a companion **mobile app** for monitoring plant growth and light exposure history.</li>
+                    <li>Upgrade the system with **wireless power solutions** for a cleaner, cable-free look.</li>
+                    <li>Simplify the assembly and disassembly process for easy maintenance and vase switching.</li>
+                </ul>
+                
+                <h3 class="mt-8">External Links</h3>
+                <ul class="link-list">
+                    <li><a href="#">View Fusion 360 Models (Placeholder)</a></li>
+                    <li><a href="#">Research and Bibliography (Placeholder)</a></li>
+                </ul>
+            </section>
+
+            <!-- FOOTER -->
+            <footer>
+                <div class="container">
+                    <p class="footer-text">&copy; 2025 Solar Vase Project. Developed by Mengting Li, Janice Zhou, and Wei Chang.</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+</body>
+</html>
