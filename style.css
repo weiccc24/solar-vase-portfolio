@@ -211,8 +211,8 @@ section {
 /* The video section content is centered, which centers the video-embed block */
 .video-embed {
     position: relative;
-    width: 90%;
-    /* FIX: Reduced max-width from 850px to 680px (850 * 0.80) to make video 20% smaller */
+    width: 100%;
+    /* Max width remains 680px for the 20% size reduction */
     max-width: 680px; 
     margin: 40px auto 0; /* Centers the block itself */
     padding-bottom: 56.25%; /* 16:9 Aspect Ratio height placeholder */
@@ -224,6 +224,7 @@ section {
 
 /* This targets the <video> element directly, ensuring it fills the container */
 .video-embed .video-display {
+    /* FIX: Set width and height back to 100% to fill the 680px centered container */
     width: 100%;
     height: 100%;
     position: absolute; /* Allows it to fill the height defined by padding-bottom */
