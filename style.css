@@ -212,7 +212,8 @@ section {
 .video-embed {
     position: relative;
     width: 100%;
-    max-width: 850px;
+    /* FIX: Reduced max-width from 850px to 680px (850 * 0.80) to make video 20% smaller */
+    max-width: 680px; 
     margin: 40px auto 0; /* Centers the block itself */
     padding-bottom: 56.25%; /* 16:9 Aspect Ratio height placeholder */
     height: 0;
