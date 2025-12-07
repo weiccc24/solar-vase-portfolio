@@ -20,8 +20,6 @@ The core of the system is a precision-engineered base housing a Light Sensor, a 
 
 ### 👥 Team Contributions
 
-- **Mengting Li:** Focus on industrial design, aesthetic language integration, and final product photography.   
-- **Janice Zhou:** 3D modeling of all components (vase, gears, base), tolerance testing, and 3D printing execution.
 - **Wei Chang:** Management of the intelligent rotating mechanism, electronics prototyping, and component selection. 
 
 ## 💻 Repository Structure
