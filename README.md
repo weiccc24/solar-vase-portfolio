@@ -4,7 +4,7 @@ A sunlight-following vase designed to help indoor plants receive balanced sunlig
 
 ## 🌻 Project Overview & Purpose
 
-This repository hosts the official Final Project Website for the Solar Vase, developed by Mengting Li, Janice Zhou, and Wei Chang.
+This repository hosts the official Final Project Website for the Solar Vase, developed by Wei Chang.
 
 The primary function of this GitHub Page is to serve as an online record and self-explanatory portfolio of our project concept, design goals, and implementation, thereby satisfying the project requirements (FP1.1 - FP1.4). The content on this site is a professional, comprehensive showcase intended for employers, clients, and educators.
 
