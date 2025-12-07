@@ -6,7 +6,7 @@ Color Palette: Soft, nature-inspired accents on a slightly textured background.
 :root {
     --primary-color: #333333; /* Dark text */
     --accent-color: #f7a8b8; /* Soft pink/coral, inspired by the flowers */
-    --light-bg: rgba(255, 255, 255, 0.95); /* Semi-transparent white content background */
+    --light-bg: rgba(255, 255, 255, 0.90); /* FIX: Reduced opacity to 0.90 to make background image more visible */
     --border-color: #e0e0e0;
     --shadow-color: rgba(0, 0, 0, 0.1);
 }
@@ -26,11 +26,14 @@ body {
     background-attachment: fixed; /* Makes the content scroll over the background */
     background-size: cover;
     background-position: center top;
+    /* ADDED: Ensure image covers or tiles if necessary */
+    background-repeat: no-repeat;
     color: var(--primary-color);
 }
 
 .content-wrapper {
     /* This wrapper ensures all content sits cleanly on a semi-transparent white box */
+    /* FIX: Uses the slightly less opaque --light-bg variable */
     background-color: var(--light-bg);
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
 }
@@ -216,7 +219,6 @@ section {
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
-    /* Removed text-align: left from here */
 }
 
 /* This targets the <video> element directly, ensuring it fills the container */
